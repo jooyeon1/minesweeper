@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://3tg8pdj4b410"]
+
+[ext_resource type="Texture2D" uid="uid://cgq0qb66klstq" path="res://sprites/basetile.png" id="1_7co1k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xe0p6"]
+size = Vector2(16, 16)
+
+[node name="EmptyTile" type="Sprite2D"]
+texture = ExtResource("1_7co1k")
+
+[node name="EmptyTileClickable" type="Area2D" parent="."]
+
+[node name="EmptyTileCollision" type="CollisionShape2D" parent="EmptyTileClickable"]
+shape = SubResource("RectangleShape2D_xe0p6")

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://rjm0mkqiscce"]
+
+[ext_resource type="PackedScene" uid="uid://b4l0spkp2iw5n" path="res://top_panel.tscn" id="1_e6067"]
+[ext_resource type="PackedScene" uid="uid://bwnb3sojiadi" path="res://game_field.tscn" id="2_ykblh"]
+
+[node name="GameWindow" type="Window"]
+size = Vector2i(320, 416)
+
+[node name="TopPanel" parent="." instance=ExtResource("1_e6067")]
+size_flags_horizontal = 0
+
+[node name="GameField" parent="." instance=ExtResource("2_ykblh")]
+position = Vector2(40, 104)

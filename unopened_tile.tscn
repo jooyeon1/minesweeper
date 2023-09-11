@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://br2ffrgbsojsn"]
+
+[ext_resource type="Texture2D" uid="uid://bd04pb2oxnba8" path="res://sprites/unopenedtile.png" id="1_oy3c8"]
+[ext_resource type="Script" path="res://scripts/UnopenedTile.gd" id="2_bjk1e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xe0p6"]
+size = Vector2(16, 16)
+
+[node name="UnopenedTile" type="Sprite2D"]
+texture = ExtResource("1_oy3c8")
+script = ExtResource("2_bjk1e")
+
+[node name="UnopenedTileClickable" type="Area2D" parent="."]
+
+[node name="UnopenedTileCollision" type="CollisionShape2D" parent="UnopenedTileClickable"]
+shape = SubResource("RectangleShape2D_xe0p6")
